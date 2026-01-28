@@ -11,6 +11,10 @@ import { RouterView } from 'vue-router';
 
 </script>
 <style>
+body {
+  background:#080a26;
+}
+
 @screen phone {
   .body-base {
     font-size:14px;
@@ -18,7 +22,7 @@ import { RouterView } from 'vue-router';
 }
 @screen pc {
   .body-base {
-    font-size:14px;
+    font-size:16px;
   }
 }
 </style>

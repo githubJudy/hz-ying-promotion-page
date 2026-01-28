@@ -1,12 +1,13 @@
 <template>
 <div class=''>
 
-  333
+  <ViewPC />
 
 </div>
 </template>
 <script setup name='Home'>
+import ViewPC from './ViewPC/Index.vue';
 
 </script>
-<style>
+<style scoped>
 </style>
