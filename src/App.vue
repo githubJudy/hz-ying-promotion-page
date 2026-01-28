@@ -1,5 +1,6 @@
 <template>
-<div>
+<!-- <div class='body-base phone:(bg-black) pc:(bg-[#78350f])'> -->
+<div class='body-base'>
 
   <RouterView />
 
@@ -10,4 +11,14 @@ import { RouterView } from 'vue-router';
 
 </script>
 <style>
+@screen phone {
+  .body-base {
+    font-size:14px;
+  }
+}
+@screen pc {
+  .body-base {
+    font-size:14px;
+  }
+}
 </style>
