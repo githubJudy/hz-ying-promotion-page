@@ -16,16 +16,16 @@
     <div class='ts_banner inline-flex flex-1'>
       <div class='h-[280px] flex-1 mr-[20px]'>
         <div class='ts_ba_view h-[calc(50%_-_10px)] rounded-[10px] g-overflow mb-[20px]'>
-          <img class='w-full h-full' src='@/assets/imgs/swiper/swiper-banner-01.webp' />
+          <img class='w-full h-full' src='@/assets/imgs/swiper/swiper-banner-01.png' />
         </div>
 
         <div class='ts_ba_view h-[calc(50%_-_10px)] rounded-[14px]'>
-          <img class='w-full h-full' src='@/assets/imgs/swiper/swiper-banner-02.webp' />
+          <img class='w-full h-full' src='@/assets/imgs/swiper/swiper-banner-02.png' />
         </div>
       </div>
 
-      <div class='ts_ba_view h-[280px] flex-1 rounded-[14px]'>
-        <img class='w-full h-full' src='@/assets/imgs/swiper/swiper-banner-03.webp' />
+      <div class='ts_ba_view bg-[white] h-[280px] flex-1 rounded-[14px]'>
+        <img class='h-full mx-auto' src='@/assets/imgs/swiper/swiper-banner-03.png' />
       </div>
     </div>
 
@@ -36,9 +36,9 @@
 <script setup name='TheSwiper'>
 
 const _swiperList = [
-  'swiper-item-01.avif',
-  'swiper-item-02.avif',
-  'swiper-item-03.avif',
+  'swiper-item-01.png',
+  'swiper-item-02.png',
+  'swiper-item-03.png',
 ];
 
 </script>

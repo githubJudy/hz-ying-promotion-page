@@ -1,5 +1,5 @@
 <template>
-<div class='w-full mb-[80px]'>
+<div class='w-full mb-[20px]'>
 
   <div class='vppzz_model g-model-width !mb-[40px] grid grid-cols-4 rounded-[10px]'>
 

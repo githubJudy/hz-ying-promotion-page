@@ -5,7 +5,10 @@
     <template v-for='item in _list' :key='item.ident'>
       <div class='vzr_view h-[200px] relative cursor-pointer'>
         <!-- bg img -->
-        <img class='w-full h-full absolute top-0 left-0' :src='require(`@/assets/imgs/zhenren/${item.bgImg}`)' />
+        <div class='w-full h-full absolute top-0 left-0 rounded-[10px] g-overflow'>
+          <img class='w-full h-full absolute top-0 left-0' :src='require(`@/assets/imgs/zhenren/${item.bgImg}`)' />
+          <div class='_blur-bg w-full h-full absolute top-0 left-0'></div>
+        </div>
 
         <!-- people img -->
         <img class='vzr_vi_people w-[280px] h-[200px] absolute top-0 right-0' :src='require(`@/assets/imgs/zhenren/${item.peopleImg}`)' />
@@ -21,8 +24,8 @@
 
 const _list = [
   { ident:'ident01', bgImg:'zhenren-a-bg.avif', peopleImg:'zhenren-a-people.avif', prompt:'高达500万限红，豪客首选', },
-  { ident:'ident02', bgImg:'zhenren-b-bg.avif', peopleImg:'zhenren-b-people.avif', prompt:'全球第一真人娱乐', },
-  { ident:'ident03', bgImg:'zhenren-c-bg.avif', peopleImg:'zhenren-c-people.avif', prompt:'百变玩法 高端刺激', },
+  { ident:'ident02', bgImg:'zhenren-b-bg.jpg', peopleImg:'zhenren-b-people.avif', prompt:'全球第一真人娱乐', },
+  { ident:'ident03', bgImg:'zhenren-c-bg.png', peopleImg:'zhenren-c-people.avif', prompt:'百变玩法 高端刺激', },
 ]
 
 </script>
@@ -44,4 +47,8 @@ const _list = [
         top:-16px;
       }
     }
+._blur-bg {
+  background:rgba(12, 14, 43, .4);
+  backdrop-filter:blur(5px);
+}
 </style>

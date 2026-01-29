@@ -5,8 +5,8 @@
 
     <div class='w-full flex'>
       <!-- logo -->
-      <div class='w-[128px] h-[46px] bg-[gray]'>
-        <img class='w-full h-full' />
+      <div class='w-[128px] h-[46px]'>
+        <img class='w-full h-full' src='@/assets/imgs/logo/logo.png' />
       </div>
     </div>
 
@@ -85,10 +85,10 @@ import ViewCaiPiao from './ViewCaiPiao.vue';
 const _actionLeftList = [
         { ident:'shouYe', icon:'navbar-menu-shouYe.svg', name:'首页', },
         { ident:'zhenRen', icon:'navbar-menu-zhenRen.svg', name:'真人', },
-        { ident:'tiYu', icon:'navbar-menu-tiYu.svg', name:'体育', },
-        { ident:'dianYou', icon:'navbar-menu-dianYou.svg', name:'电游', },
-        { ident:'buYu', icon:'navbar-menu-buYu.avif', name:'捕鱼', },
-        { ident:'qiPai', icon:'navbar-menu-qiPai.avif', name:'棋牌', },
+        // { ident:'tiYu', icon:'navbar-menu-tiYu.svg', name:'体育', },
+        // { ident:'dianYou', icon:'navbar-menu-dianYou.svg', name:'电游', },
+        // { ident:'buYu', icon:'navbar-menu-buYu.avif', name:'捕鱼', },
+        // { ident:'qiPai', icon:'navbar-menu-qiPai.avif', name:'棋牌', },
         { ident:'caiPiao', icon:'navbar-menu-caiPiao.svg', name:'彩票', },
       ],
       _actionLeftIndex = ref(0),
@@ -129,6 +129,7 @@ const _actionLeftList = [
       }
 
 .vp_model {
-  background:rgba(12, 14, 43, .9);backdrop-filter:blur(5px);
+  background:rgba(12, 14, 43, .9);
+  backdrop-filter:blur(5px);
 }
 </style>

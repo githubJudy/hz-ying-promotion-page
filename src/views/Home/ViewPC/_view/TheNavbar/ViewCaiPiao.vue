@@ -2,24 +2,29 @@
 <div class='w-full'>
 
   <div class='w-full flex border-box py-[10px]'>
-    <div class='w-[118px] h-[156px] mt-[10px] flex-shrink-0'>
-      <img class='w-full h-full' src='@/assets/imgs/navbar-popup/navbar-popup-caiPiao.avif' />
-    </div>
 
-    <div class='flex-1 inline-flex justify-around'>
-      <template v-for='item in _list' :key='item.ident'>
-        <div class='vpzr_view w-1/3 h-[180px] flex cursor-pointer'>
-          <!-- img -->
-          <img class='vpzr_vi_img w-[190px] h-[180px] flex-shrink-0' :src='require(`@/assets/imgs/navbar-popup/caiPiao/${item.img}`)' />
+    <div class='w-full text-[30px] mt-[60px] text-center text-[white]'>敬请期待</div>
 
-          <!-- textarea -->
-          <div class='flex-1 border-box pt-[40px]'>
-            <div class='text-[20px] text-[white] text-center mb-[10px]'>{{item.name}}</div>
-            <div class='text-[14px] text-[#aab2bd] text-center'>{{item.prompt}}</div>
+    <template v-if='false'>
+      <div class='w-[118px] h-[156px] mt-[10px] flex-shrink-0'>
+        <img class='w-full h-full' src='@/assets/imgs/navbar-popup/navbar-popup-caiPiao.avif' />
+      </div>
+
+      <div class='flex-1 inline-flex justify-around'>
+        <template v-for='item in _list' :key='item.ident'>
+          <div class='vpzr_view w-1/3 h-[180px] flex cursor-pointer'>
+            <!-- img -->
+            <img class='vpzr_vi_img w-[190px] h-[180px] flex-shrink-0' :src='require(`@/assets/imgs/navbar-popup/caiPiao/${item.img}`)' />
+
+            <!-- textarea -->
+            <div class='flex-1 border-box pt-[40px]'>
+              <div class='text-[20px] text-[white] text-center mb-[10px]'>{{item.name}}</div>
+              <div class='text-[14px] text-[#aab2bd] text-center'>{{item.prompt}}</div>
+            </div>
           </div>
-        </div>
-      </template>
-    </div>
+        </template>
+      </div>
+    </template>
   </div>
 
 </div>
