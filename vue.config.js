@@ -7,6 +7,10 @@ const { defineConfig } = require('@vue/cli-service'),
 // module.exports = defineConfig({
 module.exports = {
   transpileDependencies: true,
+  publicPath: './',
+  devServer: {
+    port: 8084,
+  },
   pluginOptions: {
     // https://github.com/windicss/vite-plugin-windicss/blob/main/packages/plugin-utils/src/options.ts
     windicss: {
