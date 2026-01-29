@@ -1,7 +1,7 @@
 <template>
 <div class='tn_model mb-[20px]'>
 
-  <div class='g-model-width'>
+  <div class='g-model-width border-box pt-[10px]'>
 
     <div class='w-full flex'>
       <!-- logo -->
@@ -10,13 +10,15 @@
       </div>
     </div>
 
-    <div class='w-full flex'>
+    <div class='bg-[#212a65] w-full h-[2px] mt-[10px] mb-[2px]'></div>
+
+    <div class='tn_second w-full flex'>
       <!-- action left list -->
-      <div class='inline-flex flex-1'>
-        <template v-for='item in _actionLeftList' :key='item.ident'>
-          <div class='inline-flex items-center pl-[4px] pr-[10px] mr-[6px] cursor-pointer'>
-            <img class='w-[16px] h-[16px] bg-[gray] mr-[8px]' />
-            <div class='text-[white]'>{{item.name}}</div>
+      <div class='tn_se_left inline-flex flex-1'>
+        <template v-for='(item,index) in _actionLeftList' :key='item.ident'>
+          <div :class='["tn_se_le_view inline-flex items-center pl-[4px] pr-[10px] py-[10px] mr-[20px] cursor-pointer pr-[10px]", index === _actionLeftIndex && "_bright"]'>
+            <img class='w-[30px] h-[30px] mr-[6px]' :src='require(`@/assets/imgs/navbar/${item.icon}`)' />
+            <div class='text-[20px] text-[#d4d4d4]'>{{item.name}}</div>
           </div>
         </template>
       </div>
@@ -25,8 +27,8 @@
       <div class='inline-flex flex-shrink-0'>
         <template v-for='item in _actionRightList' :key='item.ident'>
           <div class='inline-flex items-center pl-[4px] pr-[10px] mr-[6px] cursor-pointer'>
-            <img class='w-[16px] h-[16px] bg-[gray] mr-[8px]' />
-            <div class='text-[white]'>{{item.name}}</div>
+            <img class='w-[30px] h-[30px] mr-[6px]' :src='require(`@/assets/imgs/navbar/${item.icon}`)' />
+            <div class='text-[#d4d4d4]'>{{item.name}}</div>
           </div>
         </template>
       </div>
@@ -37,18 +39,20 @@
 </div>
 </template>
 <script setup name='TheNavbar'>
+import { ref } from 'vue';
 
 const _actionLeftList = [
-        { ident:'shouYe', icon:'', name:'首页', },
-        { ident:'zhenRen', icon:'', name:'真人', },
-        { ident:'tiYu', icon:'', name:'体育', },
-        { ident:'dianYou', icon:'', name:'电游', },
-        { ident:'buYu', icon:'', name:'捕鱼', },
-        { ident:'qiPai', icon:'', name:'棋牌', },
-        { ident:'caiPiao', icon:'', name:'彩票', },
+        { ident:'shouYe', icon:'navbar-menu-shouYe.svg', name:'首页', },
+        { ident:'zhenRen', icon:'navbar-menu-zhenRen.svg', name:'真人', },
+        { ident:'tiYu', icon:'navbar-menu-tiYu.svg', name:'体育', },
+        { ident:'dianYou', icon:'navbar-menu-dianYou.svg', name:'电游', },
+        { ident:'buYu', icon:'navbar-menu-buYu.avif', name:'捕鱼', },
+        { ident:'qiPai', icon:'navbar-menu-qiPai.avif', name:'棋牌', },
+        { ident:'caiPiao', icon:'navbar-menu-caiPiao.svg', name:'彩票', },
       ],
+      _actionLeftIndex = ref(0),
       _actionRightList = [
-        { ident:'xx', icon:'', name:'APP下载', },
+        { ident:'xx', icon:'navbar-menu-appDownload.svg', name:'APP下载', },
       ]
 ;
 
@@ -66,6 +70,20 @@ const _actionLeftList = [
       rgba(4, 41, 70, 0) 48.33%
     )
   ;
-  width:100%; height:80px;
+  width:100%; /* height:80px; */
 }
+
+.tn_second {
+}
+  .tn_se_left {
+  }
+    .tn_se_le_view {
+      position:relative;
+    }
+      .tn_se_le_view._bright :after {
+        content:'';
+        background:linear-gradient(-90deg, #2d61ff, rgba(80, 119, 237, .4));
+        width:100%; height:3px;
+        position:absolute; bottom:0; left:4px;
+      }
 </style>

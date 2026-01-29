@@ -3,11 +3,11 @@
 
   <div class='g-model-width flex'>
 
-    <div class='bg-[gray] w-[660px] h-[280px] mr-[20px] flex-shrink-0 rounded-[14px]'>
+    <div class='ts_swiper bg-[gray] w-[660px] h-[280px] mr-[20px] flex-shrink-0 rounded-[14px]'>
       <el-carousel class='w-full rounded-[10px] g-overflow' height='280px'>
         <el-carousel-item v-for='item in _swiperList' :key='item'>
-          <div class='w-full h-full'>
-            <img class='w-full h-full' :src='require(`@/assets/imgs/swiper/${item}`)' />
+          <div class='ts_sw_view w-full h-full'>
+            <img class='ts_sw_vi_fill w-full h-full' :src='require(`@/assets/imgs/swiper/${item}`)' />
           </div>
         </el-carousel-item>
       </el-carousel>
@@ -43,6 +43,16 @@ const _swiperList = [
 
 </script>
 <style scoped>
+.ts_swiper {
+}
+  .ts_sw_view {
+  }
+    .ts_sw_view:hover .ts_sw_vi_fill {
+      transform:scale(1.2);
+    }
+    .ts_sw_vi_fill {
+      transition:all 0.15s;
+    }
 .ts_banner {
 }
   .ts_ba_view {
