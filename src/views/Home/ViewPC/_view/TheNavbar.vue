@@ -1,33 +1,37 @@
 <template>
-<div class='tn_model'>
+<div class='tn_model mb-[20px]'>
 
-  <div class='w-full flex'>
-    <!-- logo -->
-    <div class='w-[128px] h-[46px] bg-[gray]'>
-      <img class='w-full h-full' />
-    </div>
-  </div>
+  <div class='g-model-width'>
 
-  <div class='w-full flex'>
-    <!-- action left list -->
-    <div class='inline-flex flex-1'>
-      <template v-for='item in _actionLeftList' :key='item.ident'>
-        <div class='inline-flex items-center pl-[4px] pr-[10px] mr-[6px] cursor-pointer'>
-          <img class='w-[16px] h-[16px] bg-[gray] mr-[8px]' />
-          <div class='text-[white]'>{{item.name}}</div>
-        </div>
-      </template>
+    <div class='w-full flex'>
+      <!-- logo -->
+      <div class='w-[128px] h-[46px] bg-[gray]'>
+        <img class='w-full h-full' />
+      </div>
     </div>
 
-    <!-- action right list -->
-    <div class='inline-flex flex-shrink-0'>
-      <template v-for='item in _actionRightList' :key='item.ident'>
-        <div class='inline-flex items-center pl-[4px] pr-[10px] mr-[6px] cursor-pointer'>
-          <img class='w-[16px] h-[16px] bg-[gray] mr-[8px]' />
-          <div class='text-[white]'>{{item.name}}</div>
-        </div>
-      </template>
+    <div class='w-full flex'>
+      <!-- action left list -->
+      <div class='inline-flex flex-1'>
+        <template v-for='item in _actionLeftList' :key='item.ident'>
+          <div class='inline-flex items-center pl-[4px] pr-[10px] mr-[6px] cursor-pointer'>
+            <img class='w-[16px] h-[16px] bg-[gray] mr-[8px]' />
+            <div class='text-[white]'>{{item.name}}</div>
+          </div>
+        </template>
+      </div>
+
+      <!-- action right list -->
+      <div class='inline-flex flex-shrink-0'>
+        <template v-for='item in _actionRightList' :key='item.ident'>
+          <div class='inline-flex items-center pl-[4px] pr-[10px] mr-[6px] cursor-pointer'>
+            <img class='w-[16px] h-[16px] bg-[gray] mr-[8px]' />
+            <div class='text-[white]'>{{item.name}}</div>
+          </div>
+        </template>
+      </div>
     </div>
+
   </div>
 
 </div>
