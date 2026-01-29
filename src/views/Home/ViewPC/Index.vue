@@ -5,14 +5,14 @@
 
   <TheSwiper />
 
-  <!-- <TheSubTitle name='真人赌场' />
+  <TheSubTitle name='真人赌场' />
   <ViewZhenRen />
 
   <TheSubTitle name='体育' />
   <ViewTiYu />
 
   <TheSubTitle name='热门电游' />
-  <ViewDianYou /> -->
+  <ViewDianYou />
 
   <div class='g-model-width mb-[20px] grid grid-cols-2 gap-x-[20px]'>
     <ViewZhongShenBang />
@@ -30,12 +30,12 @@
 </div>
 </template>
 <script setup name='HomeViewPC'>
-import TheNavbar from './_view/TheNavbar.vue';
+import TheNavbar from './_view/TheNavbar/Index.vue';
 import TheSwiper from './_view/TheSwiper.vue';
 import TheSubTitle from './_view/TheSubTitle.vue';
-// import ViewZhenRen from './_view/ViewZhenRen.vue';
-// import ViewTiYu from './_view/ViewTiYu.vue';
-// import ViewDianYou from './_view/ViewDianYou.vue';
+import ViewZhenRen from './_view/ViewZhenRen.vue';
+import ViewTiYu from './_view/ViewTiYu.vue';
+import ViewDianYou from './_view/ViewDianYou.vue';
 import ViewZhongShenBang from './_view/ViewZhongShenBang.vue';
 import ViewYingJiaMiJi from './_view/ViewYingJiaMiJi.vue';
 import ViewPinPaiZanZhu from './_view/ViewPinPaiZanZhu.vue';

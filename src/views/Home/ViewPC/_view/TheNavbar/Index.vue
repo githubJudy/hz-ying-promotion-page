@@ -1,5 +1,5 @@
 <template>
-<div class='tn_model mb-[20px]'>
+<div class='tn_model mb-[20px] relative'>
 
   <div class='g-model-width border-box pt-[10px]'>
 
@@ -16,10 +16,45 @@
       <!-- action left list -->
       <div class='tn_se_left inline-flex flex-1'>
         <template v-for='(item,index) in _actionLeftList' :key='item.ident'>
-          <div :class='["tn_se_le_view inline-flex items-center pl-[4px] pr-[10px] py-[10px] mr-[20px] cursor-pointer pr-[10px]", index === _actionLeftIndex && "_bright"]'>
-            <img class='w-[30px] h-[30px] mr-[6px]' :src='require(`@/assets/imgs/navbar/${item.icon}`)' />
-            <div class='text-[20px] text-[#d4d4d4]'>{{item.name}}</div>
-          </div>
+          <el-popover popper-class='!py-[0] !border-[0]' placement='bottom' width='100%' :show-arrow='false' :offset='0'>
+            <template #default>
+              <template v-if='item.ident !== "shouYe"'>
+                <div class='vp_model w-full h-[200px] absolute bottom-[-200px] left-0 z-100'>
+                  <div class='g-model-width'>
+                    <template v-if='item.ident === "zhenRen"'>
+                      <ViewPopZhenRen />
+                    </template>
+                    <template v-else-if='item.ident === "tiYu"'>
+                      <ViewPopupTiYu />
+                    </template>
+                    <template v-else-if='item.ident === "dianYou"'>
+                      <ViewPopupDianYou />
+                    </template>
+                    <template v-else-if='item.ident === "buYu"'>
+                      <ViewPopupBuYu />
+                    </template>
+                    <template v-else-if='item.ident === "qiPai"'>
+                      <ViewPopupQiPai />
+                    </template>
+                    <template v-else-if='item.ident === "caiPiao"'>
+                      <ViewCaiPiao />
+                    </template>
+                  </div>
+                </div>
+              </template>
+            </template>
+            <template #reference>
+              <div
+                :class='[
+                  "tn_se_le_view inline-flex items-center pl-[4px] pr-[10px] py-[10px] mr-[20px] cursor-pointer pr-[10px]",
+                  index === _actionLeftIndex && "_bright"
+                ]'
+              >
+                <img class='w-[30px] h-[30px] mr-[6px]' :src='require(`@/assets/imgs/navbar/${item.icon}`)' />
+                <div class='text-[20px] text-[#d4d4d4]'>{{item.name}}</div>
+              </div>
+            </template>
+          </el-popover>
         </template>
       </div>
 
@@ -39,7 +74,13 @@
 </div>
 </template>
 <script setup name='TheNavbar'>
-import { ref } from 'vue';
+import { ref, } from 'vue';
+import ViewPopZhenRen from './ViewPopZhenRen.vue';
+import ViewPopupTiYu from './ViewPopupTiYu.vue';
+import ViewPopupDianYou from './ViewPopupDianYou.vue';
+import ViewPopupBuYu from './ViewPopupBuYu.vue';
+import ViewPopupQiPai from './ViewPopupQiPai.vue';
+import ViewCaiPiao from './ViewCaiPiao.vue';
 
 const _actionLeftList = [
         { ident:'shouYe', icon:'navbar-menu-shouYe.svg', name:'首页', },
@@ -86,4 +127,8 @@ const _actionLeftList = [
         width:100%; height:3px;
         position:absolute; bottom:0; left:4px;
       }
+
+.vp_model {
+  background:rgba(12, 14, 43, .9);backdrop-filter:blur(5px);
+}
 </style>
