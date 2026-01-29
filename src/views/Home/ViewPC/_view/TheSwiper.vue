@@ -3,11 +3,19 @@
 
   <div class='g-model-width flex'>
 
-    <div class='bg-[gray] w-[660px] h-[280px] mr-[20px] flex-shrink-0 rounded-[14px]'></div>
+    <div class='bg-[gray] w-[660px] h-[280px] mr-[20px] flex-shrink-0 rounded-[14px]'>
+      <el-carousel class='w-full rounded-[10px] g-overflow' height='280px'>
+        <el-carousel-item v-for='item in _swiperList' :key='item'>
+          <div class='w-full h-full'>
+            <img class='w-full h-full' :src='require(`@/assets/imgs/swiper/${item}`)' />
+          </div>
+        </el-carousel-item>
+      </el-carousel>
+    </div>
 
     <div class='ts_banner inline-flex flex-1'>
       <div class='h-[280px] flex-1 mr-[20px]'>
-        <div class='ts_ba_view h-[calc(50%_-_10px)] rounded-[14px] mb-[20px]'>
+        <div class='ts_ba_view h-[calc(50%_-_10px)] rounded-[10px] g-overflow mb-[20px]'>
           <img class='w-full h-full' src='@/assets/imgs/swiper/swiper-banner-01.webp' />
         </div>
 
@@ -26,6 +34,12 @@
 </div>
 </template>
 <script setup name='TheSwiper'>
+
+const _swiperList = [
+  'swiper-item-01.avif',
+  'swiper-item-02.avif',
+  'swiper-item-03.avif',
+];
 
 </script>
 <style scoped>

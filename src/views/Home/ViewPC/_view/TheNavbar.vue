@@ -39,7 +39,7 @@
 <script setup name='TheNavbar'>
 
 const _actionLeftList = [
-        { ident:'xx', icon:'', name:'xx', },
+        { ident:'shouYe', icon:'', name:'首页', },
         { ident:'zhenRen', icon:'', name:'真人', },
         { ident:'tiYu', icon:'', name:'体育', },
         { ident:'dianYou', icon:'', name:'电游', },
