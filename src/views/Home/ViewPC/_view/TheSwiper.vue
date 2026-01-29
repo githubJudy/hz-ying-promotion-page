@@ -3,7 +3,7 @@
 
   <div class='g-model-width flex'>
 
-    <div class='ts_swiper bg-[gray] w-[660px] h-[280px] mr-[20px] flex-shrink-0 rounded-[14px]'>
+    <div class='ts_swiper w-[660px] h-[280px] mr-[20px] flex-shrink-0 rounded-[14px]'>
       <el-carousel class='w-full rounded-[10px] g-overflow' height='280px'>
         <el-carousel-item v-for='item in _swiperList' :key='item'>
           <div class='ts_sw_view w-full h-full'>
