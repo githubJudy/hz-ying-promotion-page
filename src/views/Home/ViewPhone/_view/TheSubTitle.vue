@@ -1,5 +1,5 @@
 <template>
-<div class='w-full mb-[20px] py-[4px]'>
+<div class='w-full mb-[10px] py-[4px]'>
 
   <div class='g-phone-width flex'>
     <div class='tst_name text-[18px] text-[white] flex-shrink-0'>{{name}}</div>

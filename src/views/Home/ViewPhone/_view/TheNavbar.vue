@@ -1,5 +1,5 @@
 <template>
-<div class='tn_model mb-[10px] relative'>
+<div class='tn_model mb-[20px] relative'>
 
   <div class='g-phone-width border-box pt-[10px]'>
 
