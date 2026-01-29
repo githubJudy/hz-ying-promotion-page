@@ -27,6 +27,8 @@
 
   <div class='g-model-width text-[14px] text-[#848484] text-center'>© 2026 版权所有 All Rights Reserved</div>
 
+  <div class='h-[40px]'></div>
+
 </div>
 </template>
 <script setup name='HomeViewPC'>

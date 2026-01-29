@@ -38,6 +38,9 @@
         >
           <img class='w-full h-full' :src='require(`@/assets/imgs/tiyu/${item.peopleImg}`)' />
         </div>
+
+        <div class='w-full text-[22px] text-[#aab2bd] absolute top-[30px] left-0 border-box px-[20px] py-[20px]'>{{item.name}}</div>
+        <div class='w-full text-[18px] text-[#aab2bd] absolute bottom-0 left-0 border-box px-[20px] py-[20px]'>{{item.prompt}}</div>
       </div>
     </template>
   </div>
@@ -47,11 +50,11 @@
 <script setup name='ViewTiYu'>
 
 const _list = [
-  { ident:'ident01', bgImg:'tiyu-a-bg.avif', peopleImg:'tiyu-a-people.avif', },
-  { ident:'ident02', bgImg:'tiyu-b-bg.avif', peopleImg:'tiyu-b-people.avif', },
-  { ident:'ident03', bgImg:'tiyu-c-bg.avif', peopleImg:'tiyu-c-people.avif', },
-  { ident:'ident04', bgImg:'tiyu-d-bg.avif', peopleImg:'tiyu-d-people.avif', },
-  { ident:'ident05', bgImg:'tiyu-e-bg.avif', peopleImg:'tiyu-e-people.avif', },
+  { ident:'ident01', bgImg:'tiyu-a-bg.avif', peopleImg:'tiyu-a-people.avif', name:'BTI体育', prompt:'顶级赔率 迅速结算', },
+  { ident:'ident02', bgImg:'tiyu-b-bg.avif', peopleImg:'tiyu-b-people.avif', name:'沙巴体育', prompt:'亚洲版 欧洲版 投注多样', },
+  { ident:'ident03', bgImg:'tiyu-c-bg.avif', peopleImg:'tiyu-c-people.avif', name:'FB体育', prompt:'最全赛事 提前结算', },
+  { ident:'ident04', bgImg:'tiyu-d-bg.avif', peopleImg:'tiyu-d-people.avif', name:'IM体育', prompt:'最多滚球玩法 实时赛事直播', },
+  { ident:'ident05', bgImg:'tiyu-e-bg.avif', peopleImg:'tiyu-e-people.avif', name:'IM电竞', prompt:'最全电竞赛事', },
 ]
 
 </script>
