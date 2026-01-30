@@ -23,7 +23,7 @@
 <script setup name='ViewZhenRen'>
 
 const _list = [
-  { ident:'ident01', bgImg:'zhenren-a-bg.avif', peopleImg:'zhenren-a-people.avif', prompt:'高达500万限红，豪客首选', },
+  { ident:'ident01', bgImg:'zhenren-a-bg.avif', peopleImg:'zhenren-a-people.avif', prompt:'多种游戏类型 任您选择', },
   { ident:'ident02', bgImg:'zhenren-b-bg.jpg', peopleImg:'zhenren-b-people.avif', prompt:'全球第一真人娱乐', },
   { ident:'ident03', bgImg:'zhenren-c-bg.png', peopleImg:'zhenren-c-people.avif', prompt:'百变玩法 高端刺激', },
 ]

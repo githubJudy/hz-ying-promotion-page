@@ -86,7 +86,7 @@ import router from '@/routers';
 
 const _actionLeftList = [
         { ident:'shouYe', icon:'navbar-menu-shouYe.svg', name:'首页', },
-        { ident:'zhenRen', icon:'navbar-menu-zhenRen.svg', name:'真人', },
+        { ident:'zhenRen', icon:'navbar-menu-zhenRen.svg', name:'真人视讯', },
         // { ident:'tiYu', icon:'navbar-menu-tiYu.svg', name:'体育', },
         // { ident:'dianYou', icon:'navbar-menu-dianYou.svg', name:'电游', },
         // { ident:'buYu', icon:'navbar-menu-buYu.avif', name:'捕鱼', },

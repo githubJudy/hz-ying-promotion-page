@@ -30,7 +30,7 @@ const _list = [
   // { ident:'ident01', img:'navbar-popup-zhenRen-people-a.avif', name:'PA旗舰厅', prompt:'高达500万限红，豪客首选', },
   // { ident:'ident02', img:'navbar-popup-zhenRen-people-b.avif', name:'PA厅', prompt:'全球第一真人娱乐', },
   // { ident:'ident03', img:'navbar-popup-zhenRen-people-c.avif', name:'EVO厅', prompt:'百变玩法 高端刺激', },
-  { ident:'ident01', img:'navbar-popup-zhenRen-people-a.avif', name:'99贵宾厅', prompt:'高达500万限红，豪客首选', },
+  { ident:'ident01', img:'navbar-popup-zhenRen-people-a.avif', name:'99贵宾厅', prompt:'多种游戏类型 任您选择', },
   { ident:'ident02', img:'navbar-popup-zhenRen-people-b.avif', name:'99旗舰厅', prompt:'全球第一真人娱乐', },
   { ident:'ident03', img:'navbar-popup-zhenRen-people-c.avif', name:'99在线娱乐平台', prompt:'百变玩法 高端刺激', },
 ]
