@@ -45,10 +45,11 @@
 </div>
 </template>
 <script setup name='DownloadViewPC'>
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
 import ListApp from './_view/ListApp.vue';
 import ListTools from './_view/ListTools.vue';
 import ListBrowser from './_view/ListBrowser.vue';
+import router from '@/routers';
 
 const _typeList = [
         { ident:'downApps', name:'常用APP下载', },
@@ -64,6 +65,18 @@ function _bindType(event) {
 
   _typeIndex.value = Number(index);
 }
+
+onMounted(()=> {
+  const { type='' } = router.currentRoute.value.query;
+  if (type) {
+    _typeIndex.value = (
+      type === 'app' ? 0 :
+      type === 'tools' ? 1 :
+      type === 'browser' ? 2 :
+      0
+    )
+  }
+})
 
 </script>
 <style scoped>

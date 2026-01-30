@@ -1,26 +1,28 @@
 <template>
 <div class='vzsb_model w-full h-[320px]'>
 
-  <div class='w-full h-[50px] text-[22px] text-[white] flex items-center box-border pl-[100px]'>众神榜</div>
+  <div class='w-full h-[50px] text-[22px] text-[white] flex items-center box-border pl-[100px]'>下载榜</div>
 
   <div class='w-full mt-[80px] flex justify-center box-border px-[28px]'>
     <div class='h-[50px] mt-[10px] flex-1 box-border pt-[6px]'>
-      <div class='text-[12px] text-[#aab2bd] text-center mb-[4px]'>x***01</div>
-      <div class='text-[#f7c33f] text-center'>¥ 11,345</div>
+      <div class='text-[12px] text-[#aab2bd] text-center mb-[4px]'><!-- x***01 --></div>
+      <div class='text-[#f7c33f] text-center cursor-pointer' @click='_bindDownload("tools")'><!-- ¥ 11,345 -->常用工具下载</div>
     </div>
 
     <div class='w-[208px] h-[60px] box-border pt-[6px]'>
-      <div class='text-[12px] text-[#aab2bd] text-center mb-[4px]'>x***01</div>
-      <div class='text-[#f7c33f] text-center'>¥ 11,345</div>
+      <div class='text-[12px] text-[#aab2bd] text-center mb-[4px]'><!-- x***01 --></div>
+      <div class='text-[#f7c33f] text-center cursor-pointer' @click='_bindDownload("app")'><!-- ¥ 11,345 -->常用app下载</div>
     </div>
 
     <div class='h-[50px] mt-[10px] flex-1  box-border pt-[6px]'>
-      <div class='text-[12px] text-[#aab2bd] text-center mb-[4px]'>x***01</div>
-      <div class='text-[#f7c33f] text-center'>¥ 11,345</div>
+      <div class='text-[12px] text-[#aab2bd] text-center mb-[4px]'><!-- x***01 --></div>
+      <div class='text-[#f7c33f] text-center cursor-pointer' @click='_bindDownload("browser")'><!-- ¥ 11,345 -->常用浏览器下载</div>
     </div>
   </div>
 
-  <div class='vzsb_table w-full'>
+  <div class='w-full text-[30px] text-[#f7c33f] text-center py-[30px] cursor-pointer' @click='_bindDownload("fast")'>快速下载专区</div>
+
+  <!-- <div class='vzsb_table w-full'>
     <div class='vzsb_ta_head w-[calc(100%_-_56px)] mx-auto bg-[#19315f] flex justify-center text-[#aab2bd] box-border px-[28px] py-[4px]'>
       <div class='_view_first text-center'>排名</div>
       <div class='_view_second text-center'>用户名</div>
@@ -38,13 +40,14 @@
 
       <div class='w-full flex justify-center text-[#aab2bd] box-border px-[28px] py-[4px]'>注：今日排行榜每15分钟自动更新一次</div>
     </div>
-  </div>
+  </div> -->
 
 </div>
 </template>
 <script setup name='ViewZhongShenBang'>
+import router from '@/routers';
 
-const _list = [
+/*const _list = [
   { ident:'x01', name:'x***01', amount:'11,345' },
   { ident:'x02', name:'x***02', amount:'12,345' },
   { ident:'x03', name:'x***03', amount:'13,345' },
@@ -55,7 +58,11 @@ const _list = [
   { ident:'x08', name:'x***08', amount:'18,345' },
   { ident:'x09', name:'x***09', amount:'19,345' },
   { ident:'x10', name:'x***10', amount:'10,345' },
-]
+]*/
+
+function _bindDownload(type) {
+  router.push(`/Download?type=${type}`);
+}
 
 </script>
 <style scoped>

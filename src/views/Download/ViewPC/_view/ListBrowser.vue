@@ -15,7 +15,7 @@
             <template v-for='obj in item.btnList' :key='obj.ident'>
               <div
                 :class='[
-                  "g-bg-01 w-[fit-content] text-[white] py-[4px] px-[12px] rounded-[4px] cursor-pointer mr-[10px]",
+                  "g-bg-01 w-[fit-content] text-[white] py-[4px] px-[12px] rounded-[4px] cursor-pointer mr-[10px] mb-[6px]",
                   item.ident === "d99ServiceCall" && "px-[10px]",
                 ]'
                 :data-link='obj.link' @click='_bindLink'
