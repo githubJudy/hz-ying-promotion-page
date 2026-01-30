@@ -63,10 +63,68 @@
       <!-- action right list -->
       <div class='inline-flex flex-shrink-0'>
         <template v-for='item in _actionRightList' :key='item.ident'>
-          <div class='inline-flex items-center pl-[4px] pr-[10px] mr-[6px] cursor-pointer' @click='_bindDownload'>
-            <img class='w-[30px] h-[30px] mr-[6px]' :src='require(`@/assets/imgs/navbar/${item.icon}`)' />
-            <div class='text-[#d4d4d4]'>{{item.name}}</div>
-          </div>
+
+          <template v-if='item.ident === "onlineService"'>
+            <el-popover popper-class='!py-[0] !border-[0]' placement='bottom' width='100%' :show-arrow='false' :offset='0'>
+              <template #default>
+                <div class='vp_model w-full h-[200px] absolute bottom-[-200px] left-0 z-100'>
+                  <div class='g-model-width flex justify-center box-border pt-[40px]'>
+
+                    <div class='bg-[#151a36] flex box-border py-[20px] px-[20px] rounded-[6px] mx-[40px]'>
+                      <div class='w-[80px] h-[80px] rounded-[6px] g-overflow flex-shrink-0 mr-[20px]'>
+                        <img class='w-full h-full' src='@/assets/imgs/download/down-99-online-service.png' />
+                      </div>
+                      <div class='flex-1 box-border pt-[4px]'>
+                        <div class='w-full text-[20px] text-[#aab2bd] mb-[20px]'>99在线客服</div>
+                        <div class='flex flex-wrap'>
+                          <div
+                            class='g-bg-01 w-[fit-content] text-[white] py-[4px] px-[12px] rounded-[4px] cursor-pointer mr-[10px] mb-[6px]'
+                            @click='_bindLink("https://k.9955599.com/chat/index?noCanClose=1&token=a1ec5dc674d238ae08689c6bba2a7af2")'
+                            >聊天
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class='bg-[#151a36] flex box-border py-[20px] px-[20px] rounded-[6px] mx-[40px]'>
+                      <div class='w-[80px] h-[80px] rounded-[6px] g-overflow flex-shrink-0 mr-[20px]'>
+                        <img class='w-full h-full' src='@/assets/imgs/download/down-99-service-call.png' />
+                      </div>
+                      <div class='flex-1 box-border pt-[4px]'>
+                        <div class='w-full text-[20px] text-[#aab2bd] mb-[20px]'>客服联系电话</div>
+                        <div class='flex flex-wrap'>
+                          <div
+                            class='g-bg-01 w-[fit-content] text-[white] py-[4px] px-[12px] rounded-[4px] cursor-pointer mr-[10px] mb-[6px]'
+                            @click='_bindLink("")'
+                            >+95 9885965678
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </template>
+              <template #reference>
+                <div class='inline-flex items-center pl-[4px] pr-[10px] mr-[6px] cursor-pointer' @click='_bindDownload'>
+                  <template v-if='item.icon'>
+                    <img class='w-[30px] h-[30px] mr-[6px]' :src='require(`@/assets/imgs/navbar/${item.icon}`)' />
+                  </template>
+                  <div class='text-[#d4d4d4]'>{{item.name}}</div>
+                </div>
+              </template>
+            </el-popover>
+          </template>
+
+          <template v-else>
+            <div class='inline-flex items-center pl-[4px] pr-[10px] mr-[6px] cursor-pointer' @click='_bindDownload'>
+              <template v-if='item.icon'>
+                <img class='w-[30px] h-[30px] mr-[6px]' :src='require(`@/assets/imgs/navbar/${item.icon}`)' />
+              </template>
+              <div class='text-[#d4d4d4]'>{{item.name}}</div>
+            </div>
+          </template>
+
         </template>
       </div>
     </div>
@@ -96,7 +154,8 @@ const _actionLeftList = [
       ],
       // _actionLeftIndex = ref(0),
       _actionRightList = [
-        { ident:'xx', icon:'navbar-menu-appDownload.svg', name:'APP下载', },
+        { ident:'onlineService', icon:'', name:'在线客服', },
+        { ident:'download', icon:'navbar-menu-appDownload.svg', name:'APP下载', },
       ]
 ;
 
@@ -110,6 +169,12 @@ function _bindDownload() {
   if (router.currentRoute.value.name !== 'Download') {
     router.push('/Download');
   }
+}
+
+function _bindLink(link) {
+  if (!link) return;
+
+  window.open(link, '_blank');
 }
 
 </script>

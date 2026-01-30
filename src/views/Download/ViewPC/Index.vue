@@ -42,9 +42,23 @@
         <img class='w-full h-full' src='@/assets/imgs/banners/yjmj-banner-bg.jpeg' />
         <div class='_blur-bg w-full h-full absolute top-0 left-0'></div>
 
-        <img class='w-[140px] h-[140px] absolute top-[20px] right-[130px]' src='@/assets/imgs/download/99-game-qrcode.png' />
-        <div class='text-[18px] text-[white] absolute top-[calc(140px_+_20px_+_10px)] right-[114px]'>扫一扫二维码立刻下载</div>
-        <div class='text-[18px] text-[white] absolute top-[calc(140px_+_20px_+_30px)] right-[128px]'>支持IOS&Android</div>
+        <div class='absolute top-[14px] right-[130px]'>
+          <img class='w-[140px] h-[140px] mx-auto mb-[6px]' src='@/assets/imgs/download/99-game-qrcode.png' />
+          <div class='text-[18px] text-[white] text-center mb-[6px]'>扫一扫二维码立刻下载</div>
+          <div class='text-[18px] text-[white] text-center'>支持IOS&Android</div>
+        </div>
+
+        <div class='absolute top-[14px] right-[430px]'>
+          <img class='w-[140px] h-[140px] mx-auto mb-[6px]' src='@/assets/imgs/download/99-add-service01-qrcode.png' />
+          <div class='text-[18px] text-[white] text-center mb-[6px]'>扫描二维码添加我为好友</div>
+          <div class='text-[18px] text-[white] text-center'>客服1</div>
+        </div>
+
+        <div class='absolute top-[14px] right-[750px]'>
+          <img class='w-[140px] h-[140px] mx-auto mb-[6px]' src='@/assets/imgs/download/99-add-service02-qrcode.png' />
+          <div class='text-[18px] text-[white] text-center mb-[6px]'>扫描二维码添加我为好友</div>
+          <div class='text-[18px] text-[white] text-center'>客服2</div>
+        </div>
       </div>
 
       <div class='g-model-width'>

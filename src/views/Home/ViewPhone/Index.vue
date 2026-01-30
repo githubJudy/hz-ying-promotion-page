@@ -3,7 +3,7 @@
 
   <TheNavbar type='PHONE' />
 
-  <TheSubTitle name='真人赌场' />
+  <TheSubTitle name='真人视讯' />
   <ViewZhenRen />
 
   <!-- <TheSubTitle name='体育' />

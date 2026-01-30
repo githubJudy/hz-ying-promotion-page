@@ -3,7 +3,7 @@
 
   <div class='w-full flex border-box py-[10px]'>
     <div class='w-[118px] h-[156px] mt-[10px] flex-shrink-0'>
-      <img class='w-full h-full' src='@/assets/imgs/navbar-popup/navbar-popup-zhenRen.avif' />
+      <!-- <img class='w-full h-full' src='@/assets/imgs/navbar-popup/navbar-popup-zhenRen.avif' /> -->
     </div>
 
     <div class='flex-1 inline-flex justify-around'>

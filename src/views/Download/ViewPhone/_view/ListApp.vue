@@ -1,7 +1,7 @@
 <template>
 <div class='tn_model mb-[20px] relative'>
 
-  <div class='g-phone-width grid grid-cols-2 gap-x-[20px] gap-y-[20px]'>
+  <div class='g-phone-width grid grid-cols-2 gap-x-[10px] gap-y-[10px]'>
 
     <template v-for='item in _list' :key='item.ident'>
       <div
@@ -40,7 +40,19 @@
 
 const _list = [
   {
-  ident:'dGame', icon:'down-99-game.png', name:'游戏下载',
+    ident:'dChatJiuXing', icon:'down-jiuxing-chat.png', name:'九信聊天',
+    btnList: [
+      { ident:'x01', name:'下载', link:'http://www.123456799.net/', },
+    ],
+  },
+  {
+    ident:'dChatHaiOu', icon:'down-haiou-chat.png', name:'海鸥聊天',
+    btnList: [
+      { ident:'x01', name:'下载', link:'https://www.haiouchat.com/', },
+    ],
+  },
+  {
+    ident:'dGame', icon:'down-99-game.png', name:'游戏下载',
     btnList: [
       // { ident:'x01', name:'手机APP', link:'https://www.3658829.com/#/HomeAPP', },
       { ident:'x01', name:'手机APP', link:'http://6.zd10086.com/', },
@@ -56,29 +68,29 @@ const _list = [
     ],
   },
   {
-    ident:'dChatJiuXing', icon:'down-jiuxing-chat.png', name:'九信聊天',
-    btnList: [
-      { ident:'x01', name:'下载', link:'http://www.123456799.net/', },
-    ],
-  },
-  {
-    ident:'dChatHaiOu', icon:'down-haiou-chat.png', name:'海鸥聊天',
-    btnList: [
-      { ident:'x01', name:'下载', link:'https://www.haiouchat.com/', },
-    ],
-  },
-  {
     ident:'dWalletJinKuang', icon:'down-wallet-jinkuang.png', name:'金矿钱包',
     btnList: [
       { ident:'x01', name:'下载', link:'https://www.jkqb.cc/', },
     ],
   },
   {
-    ident:'d99OnlineSErvice', icon:'down-99-online-service.png', name:'99在线客服',
+    ident:'dBiAn', icon:'down-bian-icon.webp', name:'币安',
     btnList: [
-      { ident:'x01', name:'聊天', link:'https://k.9955599.com/chat/index?noCanClose=1&token=a1ec5dc674d238ae08689c6bba2a7af2', },
+      { ident:'x01', name:'下载', link:'https://download-1306379396.file.myqcloud.com/pack/BNApp.apk', },
     ],
   },
+  {
+    ident:'dOuYi', icon:'down-ouyi-icon.webp', name:'欧易',
+    btnList: [
+      { ident:'x01', name:'下载', link:'https://www.chouyi.mobi/zh-hans', },
+    ],
+  },
+  // {
+  //   ident:'d99OnlineSErvice', icon:'down-99-online-service.png', name:'99在线客服',
+  //   btnList: [
+  //     { ident:'x01', name:'聊天', link:'https://k.9955599.com/chat/index?noCanClose=1&token=a1ec5dc674d238ae08689c6bba2a7af2', },
+  //   ],
+  // },
   {
     ident:'d99ServiceCall', icon:'down-99-service-call.png', name:'客服联系电话',
     btnList: [
