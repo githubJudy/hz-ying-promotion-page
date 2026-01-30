@@ -8,7 +8,7 @@
 
     <div class='flex-1 inline-flex justify-around'>
       <template v-for='item in _list' :key='item.ident'>
-        <div class='vpzr_view w-1/3 h-[180px] flex cursor-pointer'>
+        <div class='vpzr_view w-1/3 h-[180px] flex cursor-pointer' @click='_bindGoGame'>
           <!-- img -->
           <img class='vpzr_vi_img w-[190px] h-[180px] flex-shrink-0' :src='require(`@/assets/imgs/navbar-popup/${item.img}`)' />
 
@@ -34,6 +34,10 @@ const _list = [
   { ident:'ident02', img:'navbar-popup-zhenRen-people-b.avif', name:'99旗舰厅', prompt:'全球第一真人娱乐', },
   { ident:'ident03', img:'navbar-popup-zhenRen-people-c.avif', name:'99在线娱乐平台', prompt:'百变玩法 高端刺激', },
 ]
+
+function _bindGoGame() {
+  window.open('http://8.zd10086.com/', '_blank');
+}
 
 </script>
 <style scoped>

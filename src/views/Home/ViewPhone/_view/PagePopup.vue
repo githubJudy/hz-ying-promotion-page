@@ -1,9 +1,9 @@
 <template>
 <div class='fixed top-[40vh] right-0'>
 
-  <div class='pp_view w-[140px] h-[46px] flex justify-center items-center rounded-[6px] cursor-pointer' @click='_bindOnlineService'>
-    <img class='pp_vi_icon w-[26px] h-[26px] mr-[6px]' src='@/assets/imgs/icons/page-popup-online-service.svg' />
-    <div class='pp_vi_name text-[18px] text-[#EEEEEE]'>在线客服</div>
+  <div class='pp_view w-[100px] h-[36px] flex justify-center items-center rounded-[6px] cursor-pointer' @click='_bindOnlineService'>
+    <img class='pp_vi_icon w-[20px] h-[20px] mr-[6px]' src='@/assets/imgs/icons/page-popup-online-service.svg' />
+    <div class='pp_vi_name text-[14px] text-[#EEEEEE]'>在线客服</div>
   </div>
 
 </div>

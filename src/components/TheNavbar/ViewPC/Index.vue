@@ -15,7 +15,8 @@
     <div class='tn_second w-full flex'>
       <!-- action left list -->
       <div class='tn_se_left inline-flex flex-1'>
-        <template v-for='(item,index) in _actionLeftList' :key='item.ident'>
+        <!-- <template v-for='(item,index) in _actionLeftList' :key='item.ident'> -->
+        <template v-for='item in _actionLeftList' :key='item.ident'>
           <el-popover popper-class='!py-[0] !border-[0]' placement='bottom' width='100%' :show-arrow='false' :offset='0'>
             <template #default>
               <template v-if='item.ident !== "shouYe"'>
@@ -46,8 +47,8 @@
             <template #reference>
               <div
                 :class='[
-                  "tn_se_le_view inline-flex items-center pl-[4px] pr-[10px] py-[10px] mr-[20px] cursor-pointer pr-[10px]",
-                  index === _actionLeftIndex && "_bright"
+                  "tn_se_le_view inline-flex items-center pl-[4px] pr-[10px] py-[10px] mr-[20px] cursor-pointer pr-[10px]"/*,
+                  index === _actionLeftIndex && "_bright"*/
                 ]'
                 @click='_bindHome'
               >
@@ -75,7 +76,7 @@
 </div>
 </template>
 <script setup name='TheNavbar'>
-import { ref, } from 'vue';
+// import { ref, } from 'vue';
 import ViewPopZhenRen from './ViewPopZhenRen.vue';
 import ViewPopupTiYu from './ViewPopupTiYu.vue';
 import ViewPopupDianYou from './ViewPopupDianYou.vue';
@@ -93,7 +94,7 @@ const _actionLeftList = [
         // { ident:'qiPai', icon:'navbar-menu-qiPai.avif', name:'棋牌', },
         { ident:'caiPiao', icon:'navbar-menu-caiPiao.svg', name:'彩票', },
       ],
-      _actionLeftIndex = ref(0),
+      // _actionLeftIndex = ref(0),
       _actionRightList = [
         { ident:'xx', icon:'navbar-menu-appDownload.svg', name:'APP下载', },
       ]
@@ -135,12 +136,18 @@ function _bindDownload() {
     .tn_se_le_view {
       position:relative;
     }
-      .tn_se_le_view._bright :after {
+      .tn_se_le_view:hover :after {
         content:'';
         background:linear-gradient(-90deg, #2d61ff, rgba(80, 119, 237, .4));
         width:100%; height:3px;
         position:absolute; bottom:0; left:4px;
       }
+      /* .tn_se_le_view._bright :after {
+        content:'';
+        background:linear-gradient(-90deg, #2d61ff, rgba(80, 119, 237, .4));
+        width:100%; height:3px;
+        position:absolute; bottom:0; left:4px;
+      } */
 
 .vp_model {
   background:rgba(12, 14, 43, .9);

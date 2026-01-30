@@ -28,6 +28,8 @@
 
   <div class='h-[40px]'></div>
 
+  <PagePopup />
+
 </div>
 </template>
 <script setup name='HomeViewPhone'>
@@ -39,6 +41,7 @@ import ViewXiaZaiBang from './_view/ViewXiaZaiBang.vue';
 // import ViewDianYou from './_view/ViewDianYou.vue';
 // import ViewPinPaiZanZhu from './_view/ViewPinPaiZanZhu.vue';
 import ViewBottom from './_view/ViewBottom.vue';
+import PagePopup from './_view/PagePopup.vue';
 
 </script>
 <style scoped>

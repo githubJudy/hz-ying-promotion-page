@@ -3,7 +3,7 @@
 
   <div class='g-model-width grid grid-cols-3 gap-x-[20px]'>
     <template v-for='item in _list' :key='item.ident'>
-      <div class='vzr_view h-[200px] relative cursor-pointer'>
+      <div class='vzr_view h-[200px] relative cursor-pointer' @click='_bindGoGame'>
         <!-- bg img -->
         <div class='w-full h-full absolute top-0 left-0 rounded-[10px] g-overflow'>
           <img class='w-full h-full absolute top-0 left-0' :src='require(`@/assets/imgs/zhenren/${item.bgImg}`)' />
@@ -27,6 +27,10 @@ const _list = [
   { ident:'ident02', bgImg:'zhenren-b-bg.jpg', peopleImg:'zhenren-b-people.avif', prompt:'全球第一真人娱乐', },
   { ident:'ident03', bgImg:'zhenren-c-bg.png', peopleImg:'zhenren-c-people.avif', prompt:'百变玩法 高端刺激', },
 ]
+
+function _bindGoGame() {
+  window.open('http://8.zd10086.com/', '_blank');
+}
 
 </script>
 <style scoped>
