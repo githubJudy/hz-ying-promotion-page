@@ -49,6 +49,7 @@
                   "tn_se_le_view inline-flex items-center pl-[4px] pr-[10px] py-[10px] mr-[20px] cursor-pointer pr-[10px]",
                   index === _actionLeftIndex && "_bright"
                 ]'
+                @click='_bindHome'
               >
                 <img class='w-[30px] h-[30px] mr-[6px]' :src='require(`@/assets/imgs/navbar/${item.icon}`)' />
                 <div class='text-[20px] text-[#d4d4d4]'>{{item.name}}</div>
@@ -61,7 +62,7 @@
       <!-- action right list -->
       <div class='inline-flex flex-shrink-0'>
         <template v-for='item in _actionRightList' :key='item.ident'>
-          <div class='inline-flex items-center pl-[4px] pr-[10px] mr-[6px] cursor-pointer'>
+          <div class='inline-flex items-center pl-[4px] pr-[10px] mr-[6px] cursor-pointer' @click='_bindDownload'>
             <img class='w-[30px] h-[30px] mr-[6px]' :src='require(`@/assets/imgs/navbar/${item.icon}`)' />
             <div class='text-[#d4d4d4]'>{{item.name}}</div>
           </div>
@@ -81,6 +82,7 @@ import ViewPopupDianYou from './ViewPopupDianYou.vue';
 import ViewPopupBuYu from './ViewPopupBuYu.vue';
 import ViewPopupQiPai from './ViewPopupQiPai.vue';
 import ViewCaiPiao from './ViewCaiPiao.vue';
+import router from '@/routers';
 
 const _actionLeftList = [
         { ident:'shouYe', icon:'navbar-menu-shouYe.svg', name:'首页', },
@@ -96,6 +98,18 @@ const _actionLeftList = [
         { ident:'xx', icon:'navbar-menu-appDownload.svg', name:'APP下载', },
       ]
 ;
+
+function _bindHome() {
+  if (router.currentRoute.value.name !== 'Home') {
+    router.replace('/');
+  }
+}
+
+function _bindDownload() {
+  if (router.currentRoute.value.name !== 'Download') {
+    router.push('/Download');
+  }
+}
 
 </script>
 <style scoped>
