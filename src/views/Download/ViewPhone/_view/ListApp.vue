@@ -55,9 +55,9 @@ const _list = [
     ident:'dGame', icon:'down-99-game.png', name:'游戏下载',
     btnList: [
       // { ident:'x01', name:'手机APP', link:'https://www.3658829.com/#/HomeAPP', },
-      { ident:'x01', name:'手机APP', link:'http://6.zd10086.com/', },
+      { ident:'x01', name:'手机APP', link:'http://www.9958998.com/#/MobileDown', },
       // { ident:'x02', name:'PC', link:'https://www.3658829.com/#/HomePhone', },
-      { ident:'x02', name:'PC', link:'http://8.zd10086.com/', },
+      { ident:'x02', name:'PC', link:'https://www.3658829.com/download/w2/99Egret_zh.exe', },
       { ident:'x03', name:'代理', link:'https://1.9958998.com/#/login', },
     ],
   },
