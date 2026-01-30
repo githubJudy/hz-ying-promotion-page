@@ -49,9 +49,10 @@ const _swiperList = [
   .ts_sw_view {
   }
     .ts_sw_view:hover .ts_sw_vi_fill {
-      transform:scale(1.2);
+      transform:scaleX(1.2) scaleY(1.4);
     }
     .ts_sw_vi_fill {
+      transform:scaleY(1.2);
       transition:all 0.15s;
     }
 .ts_banner {

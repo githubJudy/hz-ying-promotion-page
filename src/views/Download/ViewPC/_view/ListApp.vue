@@ -1,10 +1,16 @@
 <template>
 <div class='tn_model mb-[20px] relative'>
 
-  <div class='g-model-width grid grid-cols-4 gap-x-[20px] gap-y-[20px]'>
+  <div class='g-model-width grid grid-cols-3 gap-x-[20px] gap-y-[20px]'>
 
     <template v-for='item in _list' :key='item.ident'>
-      <div class='bg-[#151a36] flex box-border py-[20px] px-[20px] rounded-[6px]'>
+      <div
+        :class='[
+          "bg-[#151a36] flex box-border py-[20px] px-[20px] rounded-[6px]",
+          item.ident === "dGame" && "col-start-1 col-end-3",
+          item.ident === "d99ServiceCall" && "col-start-2 col-end-4",
+        ]'
+      >
         <div class='w-[80px] h-[80px] rounded-[6px] g-overflow flex-shrink-0 mr-[20px]'>
           <img class='w-full h-full' :src='require(`@/assets/imgs/download/${item.icon}`)' />
         </div>

@@ -31,6 +31,8 @@
 
   <div class='h-[40px]'></div>
 
+  <PagePopup />
+
 </div>
 </template>
 <script setup name='HomeViewPC'>
@@ -44,6 +46,7 @@ import ViewZhongShenBang from './_view/ViewZhongShenBang.vue';
 import ViewYingJiaMiJi from './_view/ViewYingJiaMiJi.vue';
 // import ViewPinPaiZanZhu from './_view/ViewPinPaiZanZhu.vue';
 import ViewBottom from './_view/ViewBottom.vue';
+import PagePopup from './_view/PagePopup.vue';
 
 </script>
 <style scoped>
