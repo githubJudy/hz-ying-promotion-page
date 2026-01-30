@@ -36,7 +36,7 @@ const _list = [
 ]
 
 function _bindGoGame() {
-  window.open('http://8.zd10086.com/', '_blank');
+  window.open('http://6.zd10086.com/', '_blank');
 }
 
 </script>

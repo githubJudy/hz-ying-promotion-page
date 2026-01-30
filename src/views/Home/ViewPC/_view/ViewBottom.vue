@@ -16,7 +16,7 @@
 const _list = [
   { ident:'x01', name:'关于我们', },
   { ident:'x02', name:'隐私政策', },
-  { ident:'x03', name:'合作共赢', },
+  { ident:'x03', name:'客服联系电话: +95 9885965678', },
 ]
 
 </script>
