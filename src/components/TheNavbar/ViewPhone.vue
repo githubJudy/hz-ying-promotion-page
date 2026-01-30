@@ -5,8 +5,8 @@
 
     <div class='w-full flex mb-[10px]'>
       <!-- logo -->
-      <div class='w-[128px] h-[46px] bg-[gray]'>
-        <img class='w-full h-full' />
+      <div class='w-[128px] h-[46px]'>
+        <img class='w-full h-full' src='@/assets/imgs/logo/logo.png' />
       </div>
     </div>
 
@@ -30,6 +30,7 @@
               "text-[16px] text-[#aab2bd]",
               index === _actionLeftIndex && "!text-[22px] !text-[white]",
             ]'
+            :data-index='index' @click='_bindActionLeftIndex'
             >{{item.name}}
           </div>
 
@@ -45,28 +46,56 @@
 </div>
 </template>
 <script setup name='TheNavbar'>
-import { ref, } from 'vue';
+import { ref, onMounted, } from 'vue';
+import router from '@/routers';
 
 const _swiperList = [
-  'swiper-item-01.avif',
-  'swiper-item-02.avif',
-  'swiper-item-03.avif',
+  'swiper-item-01.png',
+  'swiper-item-02.png',
+  'swiper-item-03.png',
 ];
 
 const _actionLeftList = [
         { ident:'tuiJian', name:'推荐', },
-        { ident:'zhenRen', name:'真人', },
-        { ident:'tiYu', name:'体育', },
+        // { ident:'zhenRen', name:'真人', },
+        { ident:'download', name:'下载', },
+        /*{ ident:'tiYu', name:'体育', },
         { ident:'dianYou', name:'电游', },
         { ident:'buYu', name:'捕鱼', },
         { ident:'qiPai', name:'棋牌', },
-        { ident:'caiPiao', name:'彩票', },
+        { ident:'caiPiao', name:'彩票', },*/
       ],
       _actionLeftIndex = ref(0)/*,
       _actionRightList = [
         { ident:'xx', icon:'navbar-menu-appDownload.svg', name:'APP下载', },
       ]*/
 ;
+
+function _bindActionLeftIndex(event) {
+  const { index } = event.currentTarget.dataset;
+  if (_actionLeftIndex.value === index) return;
+
+  if (_actionLeftList[index].ident === 'download') {
+    if (router.currentRoute.value.name !== 'Download') {
+      router.push('/Download');
+    }
+
+    return;
+  }
+
+  _actionLeftIndex.value = Number(index);
+  if (router.currentRoute.value.name !== 'Home') {
+    router.replace('/');
+  }
+}
+
+onMounted(()=> {
+  if (router.currentRoute.value.name === 'Download') {
+    _actionLeftIndex.value = 1;
+  } else {
+    _actionLeftIndex.value = 0;
+  }
+})
 
 </script>
 <style scoped>

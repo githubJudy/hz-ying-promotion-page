@@ -3,20 +3,24 @@
 
   <TheNavbar type='PHONE' />
 
-  <!-- <TheSubTitle name='真人赌场' />
-  <ViewZhenRen /> -->
+  <TheSubTitle name='真人赌场' />
+  <ViewZhenRen />
 
   <!-- <TheSubTitle name='体育' />
   <ViewTiYu /> -->
 
-  <TheSubTitle name='电游大厅' />
-  <ViewSwiperDianYou />
+  <!-- <TheSubTitle name='电游大厅' />
+  <ViewSwiperDianYou /> -->
 
-  <TheSubTitle name='热门电游' />
-  <ViewDianYou />
+  <!-- <TheSubTitle name='热门电游' />
+  <ViewDianYou /> -->
 
-  <TheSubTitle name='品牌赞助' />
-  <ViewPinPaiZanZhu />
+  <!-- <TheSubTitle name='品牌赞助' />
+  <ViewPinPaiZanZhu /> -->
+
+  <!-- <TheSubTitle name='下载榜' /> -->
+  <ViewXiaZaiBang />
+  <!-- <ViewZhenRen /> -->
 
   <ViewBottom />
 
@@ -29,10 +33,11 @@
 <script setup name='HomeViewPhone'>
 import TheNavbar from '@/components/TheNavbar/Index.vue';
 import TheSubTitle from './_view/TheSubTitle.vue';
-// import ViewZhenRen from './_view/ViewZhenRen.vue';
+import ViewZhenRen from './_view/ViewZhenRen.vue';
+import ViewXiaZaiBang from './_view/ViewXiaZaiBang.vue';
 // import ViewTiYu from './_view/ViewTiYu.vue';
-import ViewDianYou from './_view/ViewDianYou.vue';
-import ViewPinPaiZanZhu from './_view/ViewPinPaiZanZhu.vue';
+// import ViewDianYou from './_view/ViewDianYou.vue';
+// import ViewPinPaiZanZhu from './_view/ViewPinPaiZanZhu.vue';
 import ViewBottom from './_view/ViewBottom.vue';
 
 </script>
