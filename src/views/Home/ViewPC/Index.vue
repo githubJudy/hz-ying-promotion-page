@@ -1,7 +1,7 @@
 <template>
 <div class='vp_model'>
 
-  <TheNavbar />
+  <TheNavbar type='PC' />
 
   <TheSwiper />
 
@@ -34,7 +34,7 @@
 </div>
 </template>
 <script setup name='HomeViewPC'>
-import TheNavbar from './_view/TheNavbar/Index.vue';
+import TheNavbar from '@/components/TheNavbar/Index.vue';
 import TheSwiper from './_view/TheSwiper.vue';
 import TheSubTitle from './_view/TheSubTitle.vue';
 import ViewZhenRen from './_view/ViewZhenRen.vue';

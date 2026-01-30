@@ -25,7 +25,7 @@
         </div>
       </div>
 
-      <div class='ts_ba_view bg-[white] h-[280px] flex-1 rounded-[14px]'>
+      <div class='ts_ba_view h-[280px] flex-1 rounded-[14px]'>
         <img class='h-full mx-auto' src='@/assets/imgs/swiper/swiper-banner-03.png' />
       </div>
     </div>

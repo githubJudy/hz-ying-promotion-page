@@ -1,12 +1,19 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
  
-const PageHome = () => import('@/views/Home/Index.vue');
+const PageHome = () => import('@/views/Home/Index.vue'),
+      PageDownload = () => import('@/views/Download/Index.vue')
+;
  
 const _routes = [
   {
     path: '/',
     name: 'Home',
     component: PageHome,
+  },
+  {
+    path: '/Download',
+    name: 'Download',
+    component: PageDownload,
   },
 ]
  
