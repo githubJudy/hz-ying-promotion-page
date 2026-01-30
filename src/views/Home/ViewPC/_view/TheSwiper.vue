@@ -6,8 +6,9 @@
     <div class='ts_swiper w-[660px] h-[280px] mr-[20px] flex-shrink-0 rounded-[14px]'>
       <el-carousel class='w-full rounded-[10px] g-overflow' height='280px'>
         <el-carousel-item v-for='item in _swiperList' :key='item'>
-          <div class='ts_sw_view w-full h-full'>
+          <div class='ts_sw_view w-full h-full relative'>
             <img class='ts_sw_vi_fill w-full h-full' :src='require(`@/assets/imgs/swiper/${item}`)' />
+            <div class='_view-mask w-full h-full absolute top-0 left-0'></div>
           </div>
         </el-carousel-item>
       </el-carousel>
@@ -19,7 +20,7 @@
           <img class='w-full h-full' src='@/assets/imgs/swiper/swiper-banner-01.png' />
         </div>
 
-        <div class='ts_ba_view h-[calc(50%_-_10px)] rounded-[14px]'>
+        <div class='ts_ba_view h-[calc(50%_-_10px)] rounded-[14px] g-overflow'>
           <img class='w-full h-full' src='@/assets/imgs/swiper/swiper-banner-02.png' />
         </div>
       </div>

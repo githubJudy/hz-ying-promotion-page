@@ -27,9 +27,12 @@
 <script setup name='ViewPopZhenRen'>
 
 const _list = [
-  { ident:'ident01', img:'navbar-popup-zhenRen-people-a.avif', name:'PA旗舰厅', prompt:'高达500万限红，豪客首选', },
-  { ident:'ident02', img:'navbar-popup-zhenRen-people-b.avif', name:'PA厅', prompt:'全球第一真人娱乐', },
-  { ident:'ident03', img:'navbar-popup-zhenRen-people-c.avif', name:'EVO厅', prompt:'百变玩法 高端刺激', },
+  // { ident:'ident01', img:'navbar-popup-zhenRen-people-a.avif', name:'PA旗舰厅', prompt:'高达500万限红，豪客首选', },
+  // { ident:'ident02', img:'navbar-popup-zhenRen-people-b.avif', name:'PA厅', prompt:'全球第一真人娱乐', },
+  // { ident:'ident03', img:'navbar-popup-zhenRen-people-c.avif', name:'EVO厅', prompt:'百变玩法 高端刺激', },
+  { ident:'ident01', img:'navbar-popup-zhenRen-people-a.avif', name:'高达500万限红，豪客首选', prompt:'', },
+  { ident:'ident02', img:'navbar-popup-zhenRen-people-b.avif', name:'全球第一真人娱乐', prompt:'', },
+  { ident:'ident03', img:'navbar-popup-zhenRen-people-c.avif', name:'百变玩法 高端刺激', prompt:'', },
 ]
 
 </script>
