@@ -82,7 +82,7 @@ const _list = [
   {
     ident:'dOuYi', icon:'down-ouyi-icon.webp', name:'欧易',
     btnList: [
-      { ident:'x01', name:'下载', link:'https://www.chouyi.mobi/zh-hans', },
+      { ident:'x01', name:'下载', link:'https://www.okx.com/zh-hans/download?pageSource=nav', },
     ],
   },
   // {
