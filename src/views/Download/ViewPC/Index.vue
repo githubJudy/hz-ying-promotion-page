@@ -42,21 +42,27 @@
         <img class='w-full h-full' src='@/assets/imgs/banners/yjmj-banner-bg.jpeg' />
         <div class='_blur-bg w-full h-full absolute top-0 left-0'></div>
 
-        <div class='absolute top-[14px] right-[130px]'>
+        <div class='absolute top-[14px] right-[60px]'>
           <img class='w-[140px] h-[140px] mx-auto mb-[6px]' src='@/assets/imgs/download/99-game-qrcode.png' />
           <div class='text-[18px] text-[white] text-center mb-[6px]'>扫一扫二维码立刻下载</div>
           <div class='text-[18px] text-[white] text-center'>支持IOS&Android</div>
         </div>
 
-        <div class='absolute top-[14px] right-[430px]'>
+        <div class='absolute top-[14px] right-[300px]'>
+          <img class='w-[140px] h-[140px] mx-auto mb-[6px]' src='@/assets/imgs/download/99-add-service03-qrcode.png' />
+          <div class='text-[18px] text-[white] text-center mb-[6px]'>Telegram 扫码加好友</div>
+          <div class='text-[18px] text-[white] text-center'>ID : @jiujiuguibinhui</div>
+        </div>
+
+        <div class='absolute top-[14px] right-[560px]'>
           <img class='w-[140px] h-[140px] mx-auto mb-[6px]' src='@/assets/imgs/download/99-add-service01-qrcode.png' />
-          <div class='text-[18px] text-[white] text-center mb-[6px]'>扫描二维码添加我为好友</div>
+          <div class='text-[18px] text-[white] text-center mb-[6px]'>九信扫码加好友</div>
           <div class='text-[18px] text-[white] text-center'>客服1</div>
         </div>
 
-        <div class='absolute top-[14px] right-[750px]'>
+        <div class='absolute top-[14px] right-[800px]'>
           <img class='w-[140px] h-[140px] mx-auto mb-[6px]' src='@/assets/imgs/download/99-add-service02-qrcode.png' />
-          <div class='text-[18px] text-[white] text-center mb-[6px]'>扫描二维码添加我为好友</div>
+          <div class='text-[18px] text-[white] text-center mb-[6px]'>九信扫码加好友</div>
           <div class='text-[18px] text-[white] text-center'>客服2</div>
         </div>
       </div>

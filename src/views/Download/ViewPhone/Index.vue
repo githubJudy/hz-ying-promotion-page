@@ -1,6 +1,9 @@
 <template>
 <div class='vp_model'>
 
+  <div class='g-phone-width text-[16px] text-[white] py-[10px]'>添加好友</div>
+  <ListQrCode />
+
   <div class='g-phone-width text-[16px] text-[white] py-[10px]'>常用app</div>
   <ListApp />
 
@@ -17,6 +20,7 @@
 </div>
 </template>
 <script setup name='DownloadViewPC'>
+import ListQrCode from './_view/ListQrCode.vue';
 import ListApp from './_view/ListApp.vue';
 import ListTools from './_view/ListTools.vue';
 import ListBrowser from './_view/ListBrowser.vue';
