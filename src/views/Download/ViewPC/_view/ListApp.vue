@@ -76,6 +76,12 @@ const _list = [
     ],
   },
   {
+    ident:'dWalletJinKuang', icon:'down-bat-chat.svg', name:'蝙蝠聊天', qrCodeImg:'',
+    btnList: [
+      { ident:'x01', name:'下载', link:'https://www.batchat.com/', },
+    ],
+  },
+  {
     ident:'dWalletJinKuang', icon:'down-wallet-jinkuang.png', name:'金矿钱包', qrCodeImg:'',
     btnList: [
       { ident:'x01', name:'下载', link:'https://www.jkqb.cc/', },
