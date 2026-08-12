@@ -45,12 +45,12 @@ const _list = [
       { ident:'x01', name:'下载', link:'http://www.123456799.net/', },
     ],
   },
-  {
-    ident:'dChatHaiOu', icon:'down-haiou-chat.png', name:'海鸥聊天',
-    btnList: [
-      { ident:'x01', name:'下载', link:'https://www.haiouchat.com/', },
-    ],
-  },
+  // {
+  //   ident:'dChatHaiOu', icon:'down-haiou-chat.png', name:'海鸥聊天',
+  //   btnList: [
+  //     { ident:'x01', name:'下载', link:'https://www.haiouchat.com/', },
+  //   ],
+  // },
   {
     ident:'dGame', icon:'down-99-game.png', name:'游戏下载',
     btnList: [

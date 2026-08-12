@@ -7,7 +7,7 @@
       <div
         :class='[
           "bg-[#151a36] flex box-border py-[20px] px-[20px] rounded-[6px]",
-          item.ident === "dGame" && "col-start-1 col-end-3",
+          item.ident === "dGame" && "col-start-1 col-end-4",
           item.ident === "d99ServiceCall" && "col-start-2 col-end-4",
         ]'
       >
@@ -53,16 +53,22 @@ const _list = [
       { ident:'x01', name:'下载', link:'http://www.123456799.net/', },
     ],
   },
-  {
-    ident:'dChatHaiOu', icon:'down-haiou-chat.png', name:'海鸥聊天', qrCodeImg:'',
-    btnList: [
-      { ident:'x01', name:'下载', link:'https://www.haiouchat.com/', },
-    ],
-  },
+  // {
+  //   ident:'dChatHaiOu', icon:'down-haiou-chat.png', name:'海鸥聊天', qrCodeImg:'',
+  //   btnList: [
+  //     { ident:'x01', name:'下载', link:'https://www.haiouchat.com/', },
+  //   ],
+  // },
   {
     ident:'dTg', icon:'down-telegram.png', name:'telegram', qrCodeImg:'',
     btnList: [
       { ident:'x01', name:'下载', link:'https://desktop.telegram.org/', },
+    ],
+  },
+  {
+    ident:'dWalletJinKuang', icon:'down-bat-chat.svg', name:'蝙蝠聊天', qrCodeImg:'',
+    btnList: [
+      { ident:'x01', name:'下载', link:'https://www.batchat.com/', },
     ],
   },
   {
@@ -74,12 +80,6 @@ const _list = [
       // { ident:'x02', name:'PC', link:'https://www.3658829.com/download/w2/99Egret_zh.exe', },
         { ident:'x02', name:'PC', link:'https://www.3658829.net/download/w2/99Egret_zh.exe', },
       { ident:'x03', name:'代理', link:'https://1.9958998.com/#/login', },
-    ],
-  },
-  {
-    ident:'dWalletJinKuang', icon:'down-bat-chat.svg', name:'蝙蝠聊天', qrCodeImg:'',
-    btnList: [
-      { ident:'x01', name:'下载', link:'https://www.batchat.com/', },
     ],
   },
   {

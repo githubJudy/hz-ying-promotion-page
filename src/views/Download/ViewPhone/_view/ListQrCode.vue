@@ -24,7 +24,7 @@
     <div class=''>
       <img class='w-[120px] h-[120px] mx-auto mb-[6px]' src='@/assets/imgs/download/99-add-service03-qrcode.png' />
       <div class='text-[14px] text-[white] text-center mb-[6px]'>Telegram 扫码加好友</div>
-      <div class='text-[14px] text-[white] text-center'>ID : @jiujiuguibinhui</div>
+      <div class='text-[14px] text-[white] text-center'>ID : @JJKH99</div>
     </div>
 
   </div>

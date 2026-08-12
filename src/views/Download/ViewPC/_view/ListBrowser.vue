@@ -52,6 +52,18 @@ const _list = [
       { ident:'x01', name:'下载', link:'https://www.mozilla.org/zh-CN/firefox/all/#product-desktop-release', },
     ]
   },
+  {
+    ident:'dSouGou', icon:'down-browser-sougou.svg', name:'搜狗',
+    btnList: [
+      { ident:'x01', name:'下载', link:'https://ie.sogou.com/', },
+    ]
+  },
+  {
+    ident:'dQQ', icon:'down-browser-qq.svg', name:'QQ浏览器',
+    btnList: [
+      { ident:'x01', name:'下载', link:'https://browser.qq.com/', },
+    ]
+  },
 ]
 
 function _bindLink(event) {
