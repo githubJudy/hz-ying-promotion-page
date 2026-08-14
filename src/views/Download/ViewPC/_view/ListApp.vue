@@ -63,6 +63,7 @@ const _list = [
     ident:'dTg', icon:'down-telegram.png', name:'telegram', qrCodeImg:'',
     btnList: [
       { ident:'x01', name:'下载', link:'https://desktop.telegram.org/', },
+      { ident:'x02', name:'打开网站', link:'https://telegram.org', },
     ],
   },
   {
