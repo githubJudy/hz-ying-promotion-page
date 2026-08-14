@@ -53,7 +53,7 @@ const _list = [
     ]
   },
   {
-    ident:'dSouGou', icon:'down-browser-sougou.svg', name:'搜狗',
+    ident:'dSouGou', icon:'down-browser-sougou.jpg', name:'搜狗高速浏览器',
     btnList: [
       { ident:'x01', name:'下载', link:'https://ie.sogou.com/', },
     ]
